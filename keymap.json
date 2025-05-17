@@ -14,8 +14,9 @@
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "space w": "workspace::Save",
-      "shift-h": "pane::ActivatePreviousItem",
-      "shift-l": "pane::ActivateNextItem",
+      "shift-l": "pane::ActivateNextItem", // Next Tab
+      "shift-h": "pane::ActivatePreviousItem", // Previous Tab
+
       "space e": "workspace::ToggleLeftDock"
     }
   },
