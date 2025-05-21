@@ -25,14 +25,16 @@
       "shift-l": "pane::ActivateNextItem", // next tab
       "shift-h": "pane::ActivatePreviousItem", // previous tab
 
-      "space e": "workspace::ToggleLeftDock" // toggle file explorer (left dock)
+      "space e": "workspace::ToggleLeftDock", // toggle file explorer (left dock)
+      "space space": "file_finder::Toggle" // open file finder
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "space e": "workspace::ToggleLeftDock", // toggle the file explorer (left dock)
-      "ctrl-d": "project_panel::Delete" // delete selected item in file explorer (left dock)
+      "ctrl-d": "project_panel::Delete", // delete selected item in file explorer (left dock)
+      "ctrl-shift-n": "project_panel::NewDirectory" // create new directory
     }
   },
   {
